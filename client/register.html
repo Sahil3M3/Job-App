@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>       
+</head>
+<body>
+
+    <article class="pa4 black-80">
+        <form onsubmit="handleSubmit(event)"  method="get" accept-charset="utf-8">
+          <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+            <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
+            <div class="mt3">
+                <label class="db fw4 lh-copy f6" for="email-address">User Name</label>
+                <input class="pa2 input-reset ba bg-transparent w-100 measure" type="text" name="username"  id="username">
+              </div>
+            <div class="mt3">
+              <label class="db fw4 lh-copy f6" for="email-address">Email address</label>
+              <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email"  id="email">
+            </div>
+            <div class="mt3">
+                <label class="db fw4 lh-copy f6" for="email-address">Phone </label>
+                <input class="pa2 input-reset ba bg-transparent w-100 measure" type="number" name="phone"  id="phone">
+              </div>
+            <div class="mt3">
+              <label class="db fw4 lh-copy f6" for="password">Password</label>
+              <input class="b pa2 input-reset ba bg-transparent" type="password" name="password"  id="password">
+            </div>
+          </fieldset>
+          <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Sign Up"></div>
+          <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="button" onclick="handleClike(event)" value="Sign In"></div>
+        </form>
+      </article>
+    <script src="register.js"></script>
+</body>
+</html>
