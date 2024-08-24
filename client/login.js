@@ -12,7 +12,7 @@ event.preventDefault();
     axios.post("http://localhost:5000/api/login",user)
     .then(r=>{
    sessionStorage.setItem('token',r.data.token);
-   //window.location.href="http://localhost:5500/Frontend/chat.html"
+   window.location.href="http://localhost:5500/client/profile.html"
     })
     .catch(e=>{
          const div=document.getElementById('mydiv');

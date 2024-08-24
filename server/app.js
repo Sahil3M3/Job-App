@@ -1,8 +1,9 @@
 const express=require('express')
 const cors=require('cors')
 
-//routes
-const userRoutes=require('./route/user')
+//routes impo
+const userRoutes=require('./route/user');
+const profileRoutes=require('./route/profile');
 
 //Table
 const Sequelize=require('./util/database')
@@ -16,7 +17,7 @@ app.use(express.json());
 
 //routing
 app.use('/api',userRoutes)
-
+app.use('/api/applications',profileRoutes)
 
 
 Sequelize.sync()

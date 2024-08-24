@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .profile-container {
+      width: 60%;
+      margin: 5% auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .profile-container h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-item {
+      margin: 15px 0;
+    }
+    .profile-item span {
+      font-weight: bold;
+    }
+    .button-group {
+      text-align: center;
+    }
+    .button-group button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button-group button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <h3>Profile Details</h3>
+    
+    <div class="profile-item" id="name">Name: </div>
+    <div class="profile-item" id="email">Email: </div>
+    <div class="profile-item" id="goal">Career Goals: </div>
+    <div class="profile-item" id="role">Current Role: </div>
+    <div class="profile-item" id="city">Current City: </div>
+
+    <div class="button-group">
+      <button onclick="window.location.href='edit_profile.html'">Edit Profile</button>
+      <button onclick="window.location.href='job_application_logging.html'">Log Job Application</button>
+      <button onclick="window.location.href='set_reminder.html'">Set Follow-Up Reminder</button>
+      <button onclick="window.location.href='company_info.html'">Manage Company Info</button>
+      <button onclick="window.location.href='dashboard.html'">View Dashboard</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>       
+<script src="profile.js"></script>
+</body>
+</html>
